@@ -23,21 +23,6 @@
 				position: absolute;
 			}
 		</style>
-		<script src="js/Particleground.js" tppabs="js/Particleground.js"></script>
-		<script>
-			$(document).ready(function() {
-				$('body').particleground({
-					dotColor: 'lightgrey',
-					lineColor: 'lightgrey'
-//					dotColor: '#5cbdaa',
-//					lineColor: '#5cbdaa'
-				});
-				createCode();
-				$(".submit_btn").click(function() {
-					location.href = "admin.html" /*tpa=http://***index.html*/ ;
-				});
-			});
-		</script>
 	</head>
 
 	<body>
@@ -100,6 +85,21 @@
 				</div>
 			</div>
 		</div>
+	<script src="js/Particleground.js" tppabs="js/Particleground.js"></script>
+	<script>
+			$(document).ready(function() {
+				$('body').particleground({
+					dotColor: 'lightgrey',
+					lineColor: 'lightgrey'
+//					dotColor: '#5cbdaa',
+//					lineColor: '#5cbdaa'
+				});
+				createCode();
+				$(".submit_btn").click(function() {
+					location.href = "admin.html" /*tpa=http://***index.html*/ ;
+				});
+			});
+		</script>
 	</body>
 
 </html>
