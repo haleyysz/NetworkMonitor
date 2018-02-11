@@ -9,7 +9,6 @@
 		<title>Login</title>
 		<link rel="stylesheet" href="css/login.css" />
 		<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-		<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
 		<style>
 			body {
 				height: 100%;
@@ -85,21 +84,22 @@
 				</div>
 			</div>
 		</div>
-	<script src="js/Particleground.js"></script>
-	<script>
-			$(document).ready(function() {
-				$('body').particleground({
-					dotColor: 'lightgrey',
-					lineColor: 'lightgrey'
-//					dotColor: '#5cbdaa',
-//					lineColor: '#5cbdaa'
+		<script src="assets/js/vendor/jquery-1.11.1.min.js"></script>
+		<script src="js/Particleground.js" tppabs="js/Particleground.js"></script>
+		<script>
+				$(document).ready(function() {
+					$('body').particleground({
+						dotColor: 'lightgrey',
+						lineColor: 'lightgrey'
+	//					dotColor: '#5cbdaa',
+	//					lineColor: '#5cbdaa'
+					});
+					createCode();
+					$(".submit_btn").click(function() {
+						location.href = "admin.html" /*tpa=http://***index.html*/ ;
+					});
 				});
-				createCode();
-				$(".submit_btn").click(function() {
-					location.href = "admin.html" /*tpa=http://***index.html*/ ;
-				});
-			});
-		</script>
+			</script>
 	</body>
 
 </html>
